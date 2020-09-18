@@ -1,0 +1,93 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "chhichhore quiz",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "GetAnswerIntent",
+          "slots": [
+            {
+              "name": "Answer",
+              "type": "Answer"
+            }
+          ],
+          "samples": [
+            "Is the answer {Answer}",
+            "I think so {Answer} is correct",
+            "I think so {Answer} is the correct option",
+            "{Answer} is the correct answer",
+            "{Answer} is the correct option",
+            "Answer is option {Answer}",
+            "I think it is {Answer}",
+            "option {Answer}",
+            "Is it {Answer}",
+            "The answer is {Answer}",
+            "It is {Answer}",
+            "{Answer}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "d"
+              }
+            },
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            }
+          ],
+          "name": "Answer"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "6"
+}
